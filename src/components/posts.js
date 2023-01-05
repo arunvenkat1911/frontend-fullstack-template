@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 const Posts = () => {  const [posts, setPosts] = useState([]);
   useEffect(() => {    
     const getPosts = async () => {      
-      const resp = await fetch('https://worker-typescript-template.arunkumar-venkatesan.workers.dev/api/posts');     
+      const resp = await fetch('https://worker-fullstack-template.arunkumar-venkatesan.workers.dev/api/posts');     
       const postsResp = await resp.json();      
       setPosts(postsResp);    
     };
